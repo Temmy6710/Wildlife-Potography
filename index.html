@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Link tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icons8-camera-96.png" type="image/x-icon">
+
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
+    <title>Document</title>
+</head>
+<body class="tracking-wide">
+    <header>
+        <nav class="flex items-center justify-between w-full bg-black text-color h-16 sm:h-20">
+            <div class="w-15"><img src="./images/icons8-camera-96.png" alt="Animal photography"></div>
+
+            <div class="">
+                <ul class="flex gap-10 mr-20">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">AboutUs</a>
+                    </li>
+
+                    <li>
+                        <a href="#price" class="nav-link">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="#service" class="nav-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div>
+                <img src="./images/menu-line.svg" alt="">
+            </div> -->
+        </nav>
+
+        <main class="main flex justify-center items-center">
+            <div class=" relative w-2/5 h-55 bg-gray-50 py-5 opacity-80 flex items-center justify-center">
+                <!-- Corner borders -->
+                <div class="m-2 absolute inset-0 pointer-events-none">
+                    <!-- Top left -->
+                    <div class="absolute top-0 left-0 w-10 h-0.5 bg-black"></div>
+                    <div class="absolute top-0 left-0 w-0.5 h-10 bg-black"></div>
+
+                    <!-- Top right -->
+                    <div class="absolute top-0 right-0 w-10 h-0.5 bg-black"></div>
+                    <div class="absolute top-0 right-0 w-0.5 h-10 bg-black"></div>
+
+                    <!-- Bottom left -->
+                    <div class="absolute bottom-0 left-0 w-10 h-0.5 bg-black"></div>
+                    <div class="absolute bottom-0 left-0 w-0.5 h-10 bg-black"></div>
+
+                    <!-- Bottom right -->
+                    <div class="absolute bottom-0 right-0 w-10 h-0.5 bg-black"></div>
+                    <div class="absolute bottom-0 right-0 w-0.5 h-10 bg-black"></div>
+                </div>
+
+                <!-- Text content -->
+                <div class="flex flex-col ">
+                    <h1 class="text-4xl">I'M Salim Rana</h1>
+                    <p class="text-2xl mt-4">Wildlife Photographer</p>
+                </div>
+            </div>
+        </main>
+        
+    </header>
+    
+    <div class="pt-20 flex justify-center space-x-6 text-lg font-semibold">
+        <button id="all-tab" class="filter-tab" onclick="filterSelection('all')">All</button>
+        <button id="art-tab" class="filter-tab" onclick="filterSelection('Nature')">Nature</button>
+        <button id="web-tab" class="filter-tab" onclick="filterSelection('Wildlife')">Wildlife</button>
+        <button id="design-tab" class="filter-tab" onclick="filterSelection('Ocean')">Ocean</button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
