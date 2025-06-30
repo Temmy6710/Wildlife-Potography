@@ -13,3 +13,8 @@
     color: #3ECDBA;
 }
 
+.button{
+    border-bottom: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+

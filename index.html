@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <!-- Link tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/icons8-camera-96.png" type="image/x-icon">
-
     <!-- Remix Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
     <title>Document</title>
@@ -80,11 +78,21 @@
         
     </header>
     
-    <div class="pt-20 flex justify-center space-x-6 text-lg font-semibold">
-        <button id="all-tab" class="filter-tab" onclick="filterSelection('all')">All</button>
-        <button id="art-tab" class="filter-tab" onclick="filterSelection('Nature')">Nature</button>
-        <button id="web-tab" class="filter-tab" onclick="filterSelection('Wildlife')">Wildlife</button>
-        <button id="design-tab" class="filter-tab" onclick="filterSelection('Ocean')">Ocean</button>
+    <div class="pt-20 flex justify-center space-x-6 text-lg font-semibold" id="buttons">
+        <button id="all-tab" class="filter-tab button" onclick="filterSelection('all')">All</button>
+        <button id="nature-tab" class="filter-tab button" onclick="filterSelection('Nature')">Nature</button>
+        <button id="wildlife-tab" class="filter-tab button" onclick="filterSelection('Wildlife')">Wildlife</button>
+        <button id="ocean-tab" class="filter-tab button" onclick="filterSelection('Ocean')">Ocean</button>
+    </div>
+
+    <!-- Images -->
+    <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="filter-item nature"><img src="./images/bailey-zindel-NRQV-hBF10M-unsplash.jpg" alt="Art Work 1"></div>
+        <div class="filter-item ocean"><img src="./images/jeremy-bishop-1braZySlEKA-unsplash.jpg" alt="Web Design 1"></div>
+        <div class="filter-item wildlife"><img src="./images/lance-reis-0yKH-63KfYg-unsplash.jpg" alt="Design 1"></div>
+        <div class="filter-item ocean"><img src="./images/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg" alt="Art Work 2"></div>
+        <!-- <div class="filter-item design"><img src="./images/" alt="Design 2"></div>
+        <div class="filter-item web"><img src="./images/" alt="Web Design 2"></div> -->
     </div>
 
 
